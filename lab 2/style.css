@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 25% 40% 35%;
+    column-gap: 50px;
+    margin-left: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.addForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.btn, input {
+    border-radius: 5px;
+    padding: 10px 20px ;
+    margin: 0 10px;
+;}
+
+.log {
+    height: 500px;
+    overflow: scroll;
+    border: 1px solid black;
+    border-radius: 20px;
+}
