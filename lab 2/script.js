@@ -111,3 +111,7 @@ let MassView = () => {
       log.innerHTML = log.innerHTML + 'Класс : ' + ObjectMass[i-1].class.classNumber + ObjectMass[i-1].class.classInitial + '<br>';
     };
 }
+
+let MassSort = () => {
+
+}
