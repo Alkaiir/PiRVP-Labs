@@ -113,5 +113,35 @@ let MassView = () => {
 }
 
 let MassSort = () => {
+    let type = document.querySelector('#sortValue');
+    switch(type) {
+        case 'number':
+          console.log(1);
+          break;
+      
+        case 'surname':
+          console.log(2);
+          break;
 
+        case 'firstname':
+          console.log(3);
+          break;
+
+        case 'lastname':
+          console.log(4);
+          break;
+
+        case 'height':
+           console.log(5);
+           break;
+
+        case 'weight':
+           console.log(6);
+           break;
+      
+        default:
+          console.log(1);
+          break;
+      }
+      
 }
