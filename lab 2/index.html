@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="content">
-        <div class="addForm">
+        <form class="addForm">
             <p><label for="surname" class="form-label">Фамилия</label><input type="text" id="surname" class="form-input"></p>
             <p><label for="firstname" class="form-label">Имя</label><input type="text" id="firstname" class="form-input"></p>
             <p><label for="lastname" class="form-label">Отчество</label><input type="text" id="lastname" class="form-input"></p>
@@ -17,29 +17,25 @@
             <p><label for="weight" class="form-label">Вес</label><input type="number" id="weight" class="form-input"></p>
             <p><label for="birthday" class="form-label">День рождения</label><input type="date" id="birthday" class="form-input"></p>
             <p><label for="phone" class="form-label">Номер телефона</label><input type="tel" id="phone" class="form-input"></p>
-            <p><label for="school" class="form-label">Школа</label><input type="text" id="school" class="form-input"></p>
             <p><label for="street" class="form-label">Улица дома</label><input type="text" id="street" class="form-input"></p>
             <p><label for="homeNumber" class="form-label">Номер дома</label><input type="number" id="homeNumber" class="form-input"></p>
-            <p><label for="classNumber" class="form-label">Номер класса</label><input type="number" id="classNumber" class="form-input"></p>
-            <p><label for="classInitial" class="form-label">Буква класса</label><input type="text" id="classInitial" class="form-input"></p>
             <button class="btn" onclick="MassAddObject()">Добавить объект в массив</button>
-        </div>
+        </form>
 
         <div class="buttons">
-            <div action="#" class="buttons-form"><input class="input" id="inp1"><button class="btn" onclick="GetObjectsCount()">Обновить максимального колличество объектов в массиве</div></form>
             <p id="objectsCount"></p>
-            <button class="btn" onclick="MassView()">Просмотреть содержимое массива</button>
-            <div action="#" class="buttons-form">
-                <select name="sortValue" id="sortValue" class="searchSelect">
-                    <option value="number">Сортировать по номеру школьника</option>
-                    <option value="surname">Сортировать по имени</option>
-                    <option value="firstname">Сортировать по фамилии</option>
-                    <option value="lastname">Сортировать по номеру отчеству</option>
-                    <option value="height">Сортировать по номеру росту</option>
-                    <option value="weight">Сортировать по номеру весу</option>
-                </select>
-                <button class="btn" onclick="MassSort()">Отсортировать</button>
-            </div>  
+            <div class="buttons-form"><input class="input" id="inp1"><button class="btn" onclick="GetObjectsCount()">Обновить максимального колличество объектов в массиве</button></div>
+           <div class="massView">
+               <select name="sortValue" id="sortValue" class="searchSelect">
+                   <option value="number">Сортировать по номеру </option>
+                   <option value="surname">Сортировать по фамилии</option>
+                   <option value="height">Сортировать по росту</option>
+                   <option value="weight">Сортировать по  весу</option>
+               </select>
+               <button class="btn" onclick="MassSort()">Просмотреть содержимое массива</button>
+           </div>
+            <div class="buttons-form"><input class="input" id="searchParams"><button class="btn" onclick="search()">Найти подходящих людей</button></div>
+            <p>* Введите с маленькой буквы  название параметра без пробелов по которому будет поиск и через запятую необходимое значение</p>
         </div>
 
         <div class="log" id="log"></div>
