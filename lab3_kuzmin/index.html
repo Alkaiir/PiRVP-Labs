@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="guide hiddenScreen">
+    <div class="content">
+        <h1 class="guideTitle">Руководство по игре</h1>
+        <p class="guideText">При столкновении с космическим телом на Международной космической
+            станции «Марс-2» в секторе «А» произошел процесс неконтролируемой
+            разгерметизации.
+            Требуется срочно восстановить разрушенную систему подачи воздуха. Для
+            этого в сектор «А» были направлены специалисты по монтажу систем
+            вентиляции. Перед ними поставлена задача, восстановить систему
+            воздуховода на поврежденном участке, соединив нужные участки труб между
+            началом и концом разрыва (начало и конец разрыва находятся на
+            противоположных сторонах).
+        </p>
+        <img src="src/Close.png" alt="" class="guideClose" onclick="closeGuide()">
+    </div>
+</div>
+<div class="startScreen screen">
+        <div class="startContent">
+            <h1 class="title">Space Pipes</h1>
+            <input type="text" class="usernameInput" placeholder="Enter username">
+            <div class="nav">
+                <button class="startButton" onclick="startGame()">Play</button>
+                <img src="src/Guidence.png" alt="" class="guideButton" onclick="openGuide()">
+            </div>
+        </div>
+</div>
+<div class="gameScreen screen">
+   <div class="gameContent">
+       <div class="gameField">
+       </div>
+   </div>
+</div>
+<div class="endScreen screen">
+    <div class="background">
+
+    </div>
+</div>
+</body>
+<script src="scripts.js"></script>
+</html>

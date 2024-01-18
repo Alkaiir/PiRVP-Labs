@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "TunnelFont";
+    src: local("TunnelFont"), local("TunnelFont"),
+    url("src/TunnelFront.ttf");
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: TunnelFont, sans-serif;
+}
+
+.visibleScreen {
+    display: block;
+}
+
+.hiddenScreen {
+    display: none;
+}
+
+.screen {
+    position: absolute;
+}
+
+.guide {
+    position: absolute;
+    z-index: 4;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 25%;
+    background: white;
+    border-radius: 25px;
+}
+
+.guideTitle {
+    color: #0F0F0F;
+    padding: 20px;
+    font-size: 36px;
+}
+
+.guideText {
+    color: #0F0F0F;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.guideClose {
+    width: 50px;
+    height: 50px;
+    align-self: flex-end;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.startScreen {
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("src/Background.png");
+    background-position: center;
+}
+
+.startContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.gameScreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("src/Background.png");
+    background-position: center;
+    z-index: 2;
+}
+
+.gameContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gameField {
+    background: url("src/Tile.png");
+}
+
+.tile-p1 {
+    width: 100px;
+    height: 100px;
+    background: url("src/Pipe 1.png");
+}
+
+.tile-p2 {
+    width: 100px;
+    height: 100px;
+    background: url("src/Pipe 2.png");
+}
+
+.tile-p3 {
+    width: 100px;
+    height: 100px;
+    background: url("src/Pipe 3.png");
+}
+
+.tile-p4 {
+    width: 100px;
+    height: 100px;
+    background: url("src/Pipe 4.png");
+}
+
+.tile-p5 {
+    width: 100px;
+    height: 100px;
+    background: url("src/Pipe 5.png");
+}
+
+.tile-p6 {
+    width: 100px;
+    height: 100px;
+    background: url("src/Pipe 6.png");
+}
+
+.tile-p7 {
+    width: 100px;
+    height: 100px;
+    background: url("src/Pipe 7.png");
+}
+
+.endScreen {
+    z-index: 1;
+}
+
+.usernameInput {
+    width: 500px;
+    height: 100px;
+    background: #0F0F0F;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 64px;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.guideButton {
+    cursor: pointer;
+}
+
+.title {
+    font-size: 96px;
+    color: white;
+    background: #0F0F0F;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.startButton {
+    width: 350px;
+    height: 100px;
+    background: white;
+    color: #0F0F0F;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 48px;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.row > div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.spaceship {
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}

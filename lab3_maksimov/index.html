@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="startScreen">
+        <div class="startScreenContent">
+            <h1 class="title">Корзина фруктов</h1>
+            <input type="text" class="usernameInput" placeholder="Введите свое имя">
+            <button class="startButton" onclick="startGame()">Start</button>
+        </div>
+    </div>
+    <div class="gameScreen">
+        <div class="gameScreenContent">
+            <div class="counters">
+                <div class="healPoints">
+                    <img id="hp1" src="src/Heart.png" alt="" class="healPoint">
+                    <img id="hp2" src="src/Heart.png" alt="" class="healPoint">
+                    <img id="hp3" src="src/Heart.png" alt="" class="healPoint">
+<!--                    <button onclick="fruitCreate()">123</button>-->
+                </div>
+                <div class="score">
+                    0
+                </div>
+            </div>
+            <div class="platform">
+
+            </div>
+        </div>
+    </div>
+    <div class="endScreen">
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

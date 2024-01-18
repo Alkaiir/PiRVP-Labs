@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Pacifico', cursive;
+}
+
+.startScreen {
+    z-index: 4;
+    position: absolute;
+}
+
+.startScreenContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #359e7b;
+}
+
+.title {
+    color: white;
+    font-size: 48px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.usernameInput {
+    background: none;
+    border: none;
+    border-bottom: 3px solid #1b6853;
+    border-radius: 20px;
+    color: #1b6853;
+    text-align: center;
+    font-size: 24px;
+}
+
+.usernameInput::placeholder {
+    color: #1b6853;
+}
+
+.startButton {
+    background: #1b6853;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 75px;
+    color: white;
+    font-size: 24px;
+}
+
+.startButton:hover {
+    cursor: pointer;
+}
+
+.startButton:active {
+    background: #103d31;
+}
+
+.gameScreen {
+    z-index: 3;
+    position: absolute;
+}
+
+.gameScreenContent {
+    width: 100vw;
+    height: 100vh;
+    background-color: #359e7b;
+}
+
+.counters {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+}
+
+.healPoints {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 75px;
+}
+
+.healPoint {
+    width: 50px;
+    height: 50px;
+}
+
+.score {
+    color: white;
+    font-size: 24px;
+    padding-right: 75px;
+}
+
+@keyframes drop {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 100vh;
+    }
+}
+
+.apple {
+    width: 50px;
+    top: 0;
+    animation: drop 4s linear;
+    animation-fill-mode: forwards;
+}
+
+.banana {
+    width: 50px;
+    top: 0;
+    animation: drop 5s linear;
+    animation-fill-mode: forwards;
+}
+
+.orange {
+    width: 40px;
+    top: 0;
+    animation: drop 3s linear;
+    animation-fill-mode: forwards;
+}
+
+.platform {
+    position: absolute;
+    top: 80vh;
+    left: calc((100vw - 200px) / 2);
+    width: 200px;
+    height: 25px;
+    background-color: sienna;
+}
