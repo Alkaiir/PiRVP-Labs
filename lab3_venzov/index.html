@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<div class="startScreen">
+    <div class="startContent">
+        <h1 class="gameTitle">Сапер</h1>
+        <input type="text" class="usernameInput" placeholder="Имя пользователя">
+        <button class="gameStartButton button" onclick="startScreenSwap()">Начать</button>
+    </div>
+</div>
+<div class="rules">
+    <h1 class="rulesTitle">Правила</h1>
+    <p class="rulesDesc">На игровом поле где-то спрятаны
+        мины. Игрок кликает по клеткам, открывая их. Если в клетке была мина, игрок
+        проиграл. Если нет, то в клетке выводится цифра, показывающая общее число
+        мин в соседних 8 клетках. Если игрок открыл все клетки, кроме
+        заминированных, он победил. Если игрок открывает клетку, рядом с которой нет
+        мин, то все соседние клетки открываются автоматически (если на них тоже нет
+        мин, то процесс продолжается).
+        Правой кнопкой мыши на неоткрытых клетках можно расставлять флажки.</p>
+    <h2 class="rulesClose" onclick="closeRules()">Закрыть</h2>
+</div>
+<div class="gameScreen">
+    <div class="buttons">
+        <button class="button" onclick="setMatrixProperty(5)">5x5</button>
+        <button class="button" onclick="setMatrixProperty(7)">7x7</button>
+        <button class="button" onclick="setMatrixProperty(9)">9x9</button>
+        <button class="button" onclick="setMatrixProperty(11)">11x11</button>
+        <button class="startButton button" onclick="startGame()">Начать</button>
+    </div>
+    <div class="gameField"></div>
+    <div class="gameElems">
+        <div class="timer">
+            <h2 class="timerMinutes"></h2>:<h2 class="timerSeconds"></h2>
+        </div>
+        <p class="rulesLink" onclick="showRules()"><img class="rulesLinkImg" src="book-of-black-cover-closed.png" alt="">Правила</p>
+    </div>
+</div>
+<div class="endScreen">
+    <h1 class="nickname"></h1>
+    <h2 class="score"></h2>
+    <button class="restartButton button" onclick="location.reload()">Начать заново</button>
+</div>
+</body>
+<script src=scripts.js></script>
+</html>

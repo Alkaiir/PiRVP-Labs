@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Russo One', sans-serif;
+}
+
+.startScreen {
+    background-color: #01939A;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.startContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gameTitle {
+    font-size: 48px;
+}
+
+.usernameInput {
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    padding: 20px;
+
+}
+
+.gameStartButton {
+    height: 40px;
+    width: 250px;
+}
+
+.gameScreen {
+    background-color: #01939A;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gameElems {
+    margin: 0 auto;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 44vw;
+    width: 80vw;
+}
+
+.rulesLink {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rulesLinkImg {
+    width: 35px;
+    height: 35px;
+}
+
+.rules {
+    position: absolute;
+    z-index: 4;
+    top: 18vh;
+    left: 10vw;
+    margin: 0 auto;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80vw;
+    height: 700px;
+    background-color: white;
+}
+
+.rulesTitle {
+    width: 60%;
+    text-align: center;
+}
+
+.rulesDesc{
+    width: 60%;
+}
+
+.rulesClose {
+    cursor: pointer;
+}
+
+.gameField {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 80vw;
+    height: 700px;
+    background-color: white;
+}
+
+.endScreen {
+    background-color: #01939A;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+
+
+.button {
+    background: #4fe7e7;
+    border: 2px solid #08b3b3;
+    border-radius: 30px;
+    color: black;
+    height: 50px;
+    width: 150px;
+}
+
+.startButton {
+    display: none;
+    padding: 0 15px;
+}
+
+.button:hover {
+    background: #41bebe;
+    cursor: pointer;
+}
+
+.gameStartButton {
+    width: 250px;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.tile {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    gap: 20px;
+}
+
+.timer {
+    display: flex;
+}
+
+.endScreen {
+    background-color: #01939A;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.restartButton {
+    height: 40px;
+    width: 250px;
+}
